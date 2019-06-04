@@ -45,14 +45,30 @@ body{
     padding: 1rem;
     position: relative;
     border: 1px solid #ccc;
-    width: 55%;
+    border-radius: 7px;
+    width: 67%;
     margin-bottom: 20px;
+}
+.loaded{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .card p{
     background: rgba(105, 95, 95, 0.568);
     padding: 0.5rem;
     color: white;
-    width: 80%;
+    width: 82%;
     position: absolute;
-    bottom: 8.5%;
+    bottom: 10%;
+}
+.gallery .loadMore .lmore{
+    border: 1px solid blueviolet;
+    margin: 0 auto;
+    padding: 0.8rem 2rem;
+    background: blueviolet;
+    border-radius: 25px;
+    color: white;
+    font-size: 0.9rem;
+    margin: 15px  0  25px 45% ;
+    cursor: pointer;
 }

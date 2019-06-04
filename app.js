@@ -1,28 +1,30 @@
 const li = document.querySelectorAll('.down-nav .container ul li');
 const card = document.querySelectorAll('.gallery .container .card');
 const img = document.querySelectorAll('.card img');
-
-const loadJSON = () =>{
+const lmore = document.querySelector('.lmore');
+const gal = document.querySelector('.gallery .container');
+let loaded;
+window.onload = () => {
     const xhr = new XMLHttpRequest();
     xhr.open('GET','data.json',true);
-    xhr.onreadystatechange = ()=>{
-        if(this.readyState == 4 && this.status == "200"){
-            console.log(this.responseText);
+    xhr.onreadystatechange = () =>{
+        if(xhr.readyState == 4 && xhr.status == "200"){
+            data = JSON.parse(xhr.responseText);
         }
     }
     xhr.send();
 }
-loadJSON();
-const nature = ['https://picsum.photos/id/1015/200','https://picsum.photos/id/1011/200',
-'https://picsum.photos/id/1008/200','https://picsum.photos/id/1018/200','https://picsum.photos/id/1037/200',
-'https://picsum.photos/id/1039/200','https://picsum.photos/id/1043/200','https://picsum.photos/id/1058/200',
-'https://picsum.photos/id/1072/200'];
 li.forEach((e)=>{
     e.addEventListener('click',()=>{
         updateUI(e.innerHTML);
     });    
+
 });
 const updateUI = (string)=>{
+    console.log(string);
+    const {allProducts, nature} = data;
+    lmore.style = "display: block";
+    loaded.innerHTML = "";
     switch(string){
         case 'All Products':
         img.forEach((e,i)=>{
@@ -31,8 +33,9 @@ const updateUI = (string)=>{
         });
         break;
         case 'Nature':
-        img.forEach((e)=>{
-            e.src = "https://placeimg.com/200/200/Nature";
+        img.forEach((e,i)=>{
+            e.src = nature[i];
+            console.log(nature[i]);
         });
        break;
        default:
@@ -40,3 +43,14 @@ const updateUI = (string)=>{
    
    console.log(string);
 };
+lmore.addEventListener('click',()=>{
+    loaded = document.querySelector('.gallery  .loaded');
+   lmore.style = "display: none";
+   card.forEach((e,i)=>{
+       const newCard = card[i].cloneNode();
+       const newImg = img[i].cloneNode();
+       console.log(newCard.appendChild(newImg));
+      loaded.appendChild(newCard);
+      newCard.appendChild(newImg);
+   });
+});
