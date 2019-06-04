@@ -43,7 +43,16 @@ body{
 }
 .gallery .container .card{
     padding: 1rem;
+    position: relative;
     border: 1px solid #ccc;
     width: 55%;
     margin-bottom: 20px;
+}
+.card p{
+    background: rgba(105, 95, 95, 0.568);
+    padding: 0.5rem;
+    color: white;
+    width: 80%;
+    position: absolute;
+    bottom: 8.5%;
 }
