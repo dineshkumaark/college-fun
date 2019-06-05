@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+:root{
+    --lightgreen :  rgb(76, 172, 76);;
+}
 *{
     list-style: none;
     text-decoration: none;
@@ -9,6 +12,9 @@ body{
     font-family: 'Montserrat',sans-serif;
     width: 100%;
     height: 100%;
+}
+.active{
+    background: var(--lightgreen);
 }
 .nav .up-nav{
     background: #2b2929;
@@ -36,13 +42,14 @@ body{
 }
 .down-nav ul{
     padding: 15px;
+    margin-left: -20px;
 }
 .down-nav li{
     text-transform: uppercase;
     padding: 15px;
 }
 .down-nav li:hover{
-    background: rgb(76, 172, 76);
+    background: var(--lightgreen);
 }
 /* Gallery styles */
 .gallery .container{
@@ -64,10 +71,10 @@ body{
   grid-template-columns: 1fr 1fr 1fr;
 }
 .card p{
-    background: rgba(105, 95, 95, 0.568);
+    background: rgba(8, 8, 8, 0.568);
     padding: 0.5rem;
     color: white;
-    width: 82%;
+    width: 82.10%;
     position: absolute;
     bottom: 10%;
 }

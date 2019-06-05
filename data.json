@@ -1,10 +1,14 @@
 {
-    "allProducts":["https://picsum.photos/id/1015/200","https://picsum.photos/id/1011/200",
-        "https://picsum.photos/id/1008/200","https://picsum.photos/id/1018/200","https://picsum.photos/id/1037/200",
-        "https://picsum.photos/id/1039/200","https://picsum.photos/id/1043/200","https://picsum.photos/id/1058/200",
-        "https://picsum.photos/id/1072/200"],
-    "nature":["https://picsum.photos/id/1015/200","https://picsum.photos/id/1011/200",
-        "https://picsum.photos/id/1008/200","https://picsum.photos/id/1018/200","https://picsum.photos/id/1037/200",
-        "https://picsum.photos/id/1039/200","https://picsum.photos/id/1043/200","https://picsum.photos/id/1058/200",
-        "https://picsum.photos/id/1072/200"]
+    "allProducts":["https://picsum.photos/id/1015/240/160","https://picsum.photos/id/1011/240/160",
+        "https://picsum.photos/id/1008/240/160","https://picsum.photos/id/1018/240/160","https://picsum.photos/id/1037/240/160",
+        "https://picsum.photos/id/1039/240/160","https://picsum.photos/id/1043/240/160","https://picsum.photos/id/1058/240/160",
+        "https://picsum.photos/id/1072/240/160"],
+    "seasons":["https://picsum.photos/id/171/240/160","https://picsum.photos/id/206/240/160",
+        "https://picsum.photos/id/178/240/160","https://picsum.photos/id/220/240/160","https://picsum.photos/id/232/240/160",
+        "https://picsum.photos/id/228/240/160","https://picsum.photos/id/256/240/160","https://picsum.photos/id/406/240/160",
+        "https://picsum.photos/id/229/240/160"],
+    "photo":["https://picsum.photos/id/41/240/160","https://picsum.photos/id/413/240/160",
+        "https://picsum.photos/id/425/240/160","https://picsum.photos/id/433/240/160","https://picsum.photos/id/435/240/160",
+        "https://picsum.photos/id/528/240/160","https://picsum.photos/id/527/240/160","https://picsum.photos/id/454/240/160",
+        "https://picsum.photos/id/529/240/160"]
 }

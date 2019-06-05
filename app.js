@@ -15,16 +15,20 @@ window.onload = () => {
     }
     xhr.send();
 }
-li.forEach((e)=>{
+li.forEach((e,i)=>{
     e.addEventListener('click',()=>{
         updateUI(e.innerHTML);
+        li[i].classList.add('active');
+        li.forEach((_,index)=>{
+            (i !== index) ? li[index].classList.remove('active') : "";
+        });
     });    
 
 });
 //updating UI
 const updateUI = (string)=>{
     console.log(string);
-    const {allProducts, nature} = data;
+    const {allProducts, seasons,photo} = data;
     lmore.style = "display: block";
     loaded.innerHTML = "";
     switch(string){
@@ -34,10 +38,16 @@ const updateUI = (string)=>{
             console.log(allProducts[i]);
         });
         break;
-        case 'Nature':
+        case 'Seasons':
         img.forEach((e,i)=>{
-            e.src = nature[i];
-            console.log(nature[i]);
+            e.src = seasons[i];
+            console.log(seasons[i]);
+        });
+        break;
+        case 'Photo':
+        img.forEach((e,i)=>{
+            e.src = photo[i];
+            console.log(photo[i]);
         });
        break;
        default:
