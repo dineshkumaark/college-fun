@@ -3,7 +3,8 @@ const card = document.querySelectorAll('.gallery .container .card');
 const img = document.querySelectorAll('.card img');
 const lmore = document.querySelector('.lmore');
 const gal = document.querySelector('.gallery .container');
-let loaded;
+let loaded = document.querySelector('.gallery  .loaded');
+// Getting Data from Json
 window.onload = () => {
     const xhr = new XMLHttpRequest();
     xhr.open('GET','data.json',true);
@@ -20,6 +21,7 @@ li.forEach((e)=>{
     });    
 
 });
+//updating UI
 const updateUI = (string)=>{
     console.log(string);
     const {allProducts, nature} = data;
@@ -43,8 +45,8 @@ const updateUI = (string)=>{
    
    console.log(string);
 };
+//Load More Button 
 lmore.addEventListener('click',()=>{
-    loaded = document.querySelector('.gallery  .loaded');
    lmore.style = "display: none";
    card.forEach((e,i)=>{
        const newCard = card[i].cloneNode();

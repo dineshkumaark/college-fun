@@ -19,7 +19,7 @@ body{
     font-size: 1.6rem;
 }
 .up-nav ul{
-    display: inline;
+    display: inline-block;
     margin-left: 35px;
 }
 .up-nav li,.down-nav li{
@@ -35,10 +35,14 @@ body{
     background: rgba(27, 158, 27, 0.911);
     padding: 15px;
 }
+.down-nav li{
+    text-transform: uppercase;
+}
 /* Gallery styles */
 .gallery .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: -50px;
     margin-top: 25px;
 }
 .gallery .container .card{
@@ -71,4 +75,51 @@ body{
     font-size: 0.9rem;
     margin: 15px  0  25px 45% ;
     cursor: pointer;
+}
+/* Footer */
+footer{
+    background: #131212;
+    padding-top: 25px;
+    color: white;
+    font-size: 14px;
+}
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+}
+.about,.email,.slinks{
+    width: 93%;
+}
+.about h3,.email h3,.slinks h3{
+    position: relative;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.about h3::after,.email h3::after,.slinks h3::after{
+    position: absolute;
+    content: ' ';
+    bottom: -50%;
+    width: 100%;
+    left: 0%;
+    height: 8%;
+    background: #ccc;
+}
+.email input{
+    width: 65%;
+    height: 20px;
+    border: none;
+    padding: 2px;
+    outline: none;
+}
+
+.email button{
+    padding: 5px 10px;
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+    background: #2b2929;
+    color: #fff;
 }
