@@ -2,6 +2,7 @@ const li = document.querySelectorAll('.down-nav .container ul li');
 const card = document.querySelectorAll('.gallery .container .card');
 const img = document.querySelectorAll('.card img');
 const lmore = document.querySelector('.lmore');
+const para = document.querySelectorAll('.card p');
 const gal = document.querySelector('.gallery .container');
 let loaded = document.querySelector('.gallery  .loaded');
 // Getting Data from Json
@@ -28,28 +29,45 @@ li.forEach((e,i)=>{
 //updating UI
 const updateUI = (string)=>{
     console.log(string);
-    const {allProducts, seasons,photo} = data;
+    const {allProducts, seasons,photo,holidays,spiritual,gallery} = data;
     lmore.style = "display: block";
     loaded.innerHTML = "";
     switch(string){
         case 'All Products':
         img.forEach((e,i)=>{
             e.src = allProducts[i];
-            console.log(allProducts[i]);
         });
         break;
         case 'Seasons':
         img.forEach((e,i)=>{
             e.src = seasons[i];
-            console.log(seasons[i]);
+            para[i].innerHTML = 'Seasons';
         });
         break;
         case 'Photo':
         img.forEach((e,i)=>{
             e.src = photo[i];
-            console.log(photo[i]);
+            para[i].innerHTML = 'Photo';
         });
        break;
+       case 'Holidays':
+       img.forEach((e,i)=>{
+        e.src = holidays[i];
+        para[i].innerHTML = 'Holidays';
+        });
+        break;
+        case 'Spiritual':
+       img.forEach((e,i)=>{
+        e.src = spiritual[i];
+        para[i].innerHTML = 'Spiritual';
+        });
+        break;
+        case 'Gallery':
+       img.forEach((e,i)=>{
+        e.src = gallery[i];
+        para[i].innerHTML = 'Gallery';
+        });
+        break;
        default:
     }
    

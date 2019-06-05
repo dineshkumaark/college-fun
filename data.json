@@ -10,5 +10,15 @@
     "photo":["https://picsum.photos/id/41/240/160","https://picsum.photos/id/413/240/160",
         "https://picsum.photos/id/425/240/160","https://picsum.photos/id/433/240/160","https://picsum.photos/id/435/240/160",
         "https://picsum.photos/id/528/240/160","https://picsum.photos/id/527/240/160","https://picsum.photos/id/454/240/160",
-        "https://picsum.photos/id/529/240/160"]
+        "https://picsum.photos/id/529/240/160"],
+    "holidays":["https://picsum.photos/id/1011/240/160","https://picsum.photos/id/1083/240/160",
+            "https://picsum.photos/id/177/240/160","https://picsum.photos/id/203/240/160","https://picsum.photos/id/633/240/160",
+            "https://picsum.photos/id/27/240/160","https://picsum.photos/id/338/240/160","https://picsum.photos/id/401/240/160",
+            "https://picsum.photos/id/550/240/160"], 
+    "spiritual":["https://bit.ly/2WHGEFp",
+                "https://bit.ly/2wDtJFW","https://bit.ly/31dQzBN","https://bit.ly/2WbpPhG",
+                "https://bit.ly/2IpaR2P","https://bit.ly/2HVNjn8","https://bit.ly/2IpuU0P","https://bit.ly/2wBz3tn","https://bit.ly/2MuzVKS"],
+    "gallery":["https://bit.ly/2Kv89vg",
+                    "https://bit.ly/2IiYSni","https://bit.ly/2XyDKA4","https://bit.ly/2JViMba",
+                    "https://bit.ly/2MuDa50","https://bit.ly/2My618G","https://bit.ly/2Il8Ep7","https://bit.ly/319YHmV","https://bit.ly/2KA7NTY"]
 }
