@@ -79,7 +79,7 @@ body{
 /* Footer */
 footer{
     background: #131212;
-    padding-top: 25px;
+    padding: 25px 0;
     color: white;
     font-size: 14px;
 }
@@ -122,4 +122,10 @@ footer .container{
     cursor: pointer;
     background: #2b2929;
     color: #fff;
+}
+.about p,.slinks p{
+    font-size: 13px;
+}
+.slinks .sdesc span{
+     font-size: 1.4rem;
 }
